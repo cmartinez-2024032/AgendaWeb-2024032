@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #050101; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubbles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bubble {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+    animation: animate_float 10s ease-in-out infinite;
+}
+
+.bubble:nth-child(1)  { top: 5%;   left: 5%;   transform: scale(0.55); animation-delay: 0s; }
+.bubble:nth-child(2)  { top: 15%;  right: 12%;  transform: scale(0.40); animation-delay: -2s; }
+.bubble:nth-child(3)  { bottom: 12%; left: 10%;  transform: scale(0.50); animation-delay: -4s; }
+.bubble:nth-child(4)  { bottom: 18%; right: 8%;   transform: scale(0.35); animation-delay: -6s; }
+.bubble:nth-child(5)  { top: 45%;  left: 15%;  transform: scale(0.45); animation-delay: -1s; }
+.bubble:nth-child(6)  { top: 65%;  right: 20%; transform: scale(0.50); animation-delay: -3s; }
+.bubble:nth-child(7)  { top: 12%;  left: 40%;  transform: scale(0.30); animation-delay: -5s; }
+.bubble:nth-child(8)  { bottom: 35%; left: 55%; transform: scale(0.45); animation-delay: -7s; }
+.bubble:nth-child(9)  { top: 78%;  left: 45%;  transform: scale(0.55); animation-delay: -2.5s; }
+.bubble:nth-child(10) { top: 25%;  right: 45%; transform: scale(0.35); animation-delay: -4.5s; }
+
+@keyframes animate_float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(25px, -40px) rotate(5deg); }
+    66% { transform: translate(-15px, 15px) rotate(-5deg); }
+}
+
+.bubble::before, .bubble::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 10;
+    filter: blur(2px);
+}
+.bubble::before { top: 50px; left: 45px; width: 30px; height: 30px; }
+.bubble::after { top: 80px; left: 80px; width: 20px; height: 20px; }
+
+.bubble span {
+    position: absolute;
+    border-radius: 50%;
+}
+.bubble span:nth-child(1) { inset: 10px; border-left: 15px solid #0fb4ff; filter: blur(8px); }
+.bubble span:nth-child(2) { inset: 10px; border-right: 15px solid #ff4484; filter: blur(8px); }
+.bubble span:nth-child(3) { inset: 10px; border-top: 15px solid #ffeb3b; filter: blur(8px); }
+.bubble span:nth-child(4) { inset: 30px; border-left: 15px solid #ff4484; filter: blur(12px); }
+.bubble span:nth-child(5) { inset: 10px; border-bottom: 10px solid #fff; filter: blur(8px); transform: rotate(330deg); }
+
+.login-container {
+    position: relative;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px); 
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    
+    width: 90%;
+    max-width: 320px; 
+    box-sizing: border-box; 
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0fb4ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background: #ff4484;
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .bubble {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bubble:nth-child(7), .bubble:nth-child(8) {
+        display: none;
+    }
+}
