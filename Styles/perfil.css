@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #0b0f1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* Contenedor principal */
+.perfil-container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 35px 40px;
+    border-radius: 16px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    animation: aparecer 0.6s ease;
+}
+
+/* Título */
+.perfil-container h1 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Información del perfil */
+.perfil-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.perfil-info p {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+#nombreUsuario {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0fb4ff;
+}
+
+/* Botón */
+.btn-volver {
+    display: inline-block;
+    padding: 12px;
+    width: 100%;
+    background: #0fb4ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    background: #ff4484;
+    transform: translateY(-2px);
+}
+
+/* Animación simple */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

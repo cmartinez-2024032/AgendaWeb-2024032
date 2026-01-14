@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../Styles/perfil.css">
+</head>
+<body>
+
+<div class="perfil-container">
+    <h1>Perfil</h1>
+
+    <div class="perfil-info">
+        <p><strong>Usuario:</strong></p>
+        <p id="nombreUsuario"></p>
+    </div>
+
+    <a href="contactos.html" class="btn-volver">Volver a Contactos</a>
+</div>
+
+<script>
+    document.getElementById("nombreUsuario").innerText =
+        localStorage.getItem("usuario") || "Usuario";
+</script>
+
+</body>
+</html>
