@@ -7,9 +7,18 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #1f2933, #111827);
+    background:
+        linear-gradient(
+            rgba(17, 24, 39, 0.75),
+            rgba(17, 24, 39, 0.75)
+        ),
+        url("../images/fondosC.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #e5e7eb;
 }
+
 
 .top-bar {
     display: flex;
