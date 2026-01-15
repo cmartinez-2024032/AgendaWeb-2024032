@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del Contacto</title>
+    <title>Detalle del Contacto - Cristian Martinez</title>
     <link rel="stylesheet" href="../Styles/detalleC.css">
 </head>
 <body>
@@ -12,39 +12,21 @@
     <h1>Detalle del Contacto</h1>
 
     <ul class="detalle-lista">
-        <li><i class="fa-solid fa-user"></i> <strong>Nombre:</strong> <span id="nombre"></span></li>
-        <li><i class="fa-solid fa-phone"></i> <strong>Teléfono:</strong> <span id="telefono"></span></li>
-        <li><i class="fa-solid fa-envelope"></i> <strong>Correo:</strong> <span id="correo"></span></li>
-        <li><i class="fa-solid fa-location-dot"></i> <strong>Dirección:</strong> <span id="direccion"></span></li>
-        <li><i class="fa-solid fa-tag"></i> <strong>Categoría:</strong> <span id="categoria"></span></li>
+        <li><strong>Nombre:</strong> Cristian Martinez</li>
+        <li><strong>Teléfono:</strong> 5555-5555</li>
+        <li><strong>Correo:</strong> cristian@mail.com</li>
+        <li><strong>Dirección:</strong> Ciudad de Guatemala</li>
+        <li><strong>Categoría:</strong> Trabajo</li>
     </ul>
 
     <div class="acciones">
-        <button class="btn favorito">
-            <i class="fa-solid fa-heart"></i> Favorito
-        </button>
-
-        <button class="btn editar">
-            <i class="fa-solid fa-pen"></i> Editar
-        </button>
-
-        <button class="btn eliminar">
-            <i class="fa-solid fa-trash"></i> Eliminar
-        </button>
+        <button class="btn favorito">Favorito</button>
+        <button class="btn editar">Editar</button>
+        <button class="btn eliminar">Eliminar</button>
     </div>
 
     <a href="contactos.html" class="btn-volver">← Volver</a>
 </div>
-
-<script>
-    const params = new URLSearchParams(window.location.search);
-
-    document.getElementById("nombre").textContent = params.get("nombre");
-    document.getElementById("telefono").textContent = params.get("telefono");
-    document.getElementById("correo").textContent = params.get("correo");
-    document.getElementById("direccion").textContent = params.get("direccion");
-    document.getElementById("categoria").textContent = params.get("categoria");
-</script>
 
 </body>
 </html>
