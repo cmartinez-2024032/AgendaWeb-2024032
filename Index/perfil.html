@@ -6,22 +6,19 @@
     <link rel="stylesheet" href="../Styles/perfil.css">
 </head>
 <body>
-<script src="../scripts/perfil.js"></script>
 <div class="perfil-container">
     <h1>Perfil</h1>
 
+    <div class="perfil-foto">
+        <img src="../Images/fotoPerfil.jpg" alt="Foto de perfil">
+    </div>
+
     <div class="perfil-info">
-        <p><strong>Usuario:</strong></p>
-        <p id="nombreUsuario"></p>
+        <p><strong>Usuario:</strong> cmartinez-2024032</p>
+        <p><strong>Correo:</strong> cmartinez-2024032@kinal.edu.gt</p>
     </div>
 
     <a href="contactos.html" class="btn-volver">Volver a Contactos</a>
 </div>
-
-<script>
-    document.getElementById("nombreUsuario").innerText =
-        localStorage.getItem("usuario") || "Usuario";
-</script>
-
 </body>
 </html>
