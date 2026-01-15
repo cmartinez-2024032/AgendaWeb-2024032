@@ -19,7 +19,6 @@ body {
     color: #e5e7eb;
 }
 
-
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -39,8 +38,10 @@ body {
     gap: 15px;
 }
 
+
 .perfil-btn,
-.favoritos-btn {
+.favoritos-btn,
+.tareas-btn { /* ← agregado tareas-btn */
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 25px;
@@ -55,6 +56,16 @@ body {
 
 .perfil-btn:hover {
     background: #1d4ed8;
+}
+
+.tareas-btn {
+    background: #22c55e;
+    color: #064e3b;
+}
+
+.tareas-btn:hover {
+    background: #16a34a;
+    color: #ecfdf5;
 }
 
 .favoritos-btn {

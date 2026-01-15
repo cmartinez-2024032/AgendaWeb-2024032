@@ -1,0 +1,76 @@
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(17,24,39,0.8), rgba(17,24,39,0.8)),
+        url("../images/fondosC.jpg");
+    background-size: cover;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255,255,255,0.08);
+    padding: 30px;      
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-form input,
+.todo-form select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.todo-form button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #22c55e;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background: rgba(255,255,255,0.1);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Botón volver a contactos */
+.btn-volver {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 6px 14px;
+    border-radius: 16px;
+    background: #f59e0b;
+    color: #78350f;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    opacity: 1;
+    background: #d97706;
+}
+
