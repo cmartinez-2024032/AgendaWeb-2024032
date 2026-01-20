@@ -1,97 +1,113 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #2c2f38; 
+    min-height: 100vh;
+    background:
+        linear-gradient(
+            rgba(17, 24, 39, 0.75),
+            rgba(17, 24, 39, 0.75)
+        ),
+        url("../images/fondosC.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #e5e7eb;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    color: #e0e0e0; 
+    padding: 20px;
 }
 
 .nuevo-contacto-container {
-    background: #333; 
-    width: 400px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transform-style: preserve-3d;
-    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 520px;
+    padding: 42px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
 }
 
-.nuevo-contacto-container:hover {
-    transform: rotateY(10deg) rotateX(5deg);
-}
-
-/* Encabezado */
-header h1 {
-    font-size: 24px;
+.nuevo-contacto-container h1 {
     text-align: center;
-    margin-bottom: 20px;
-    color: #ffffff; 
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 28px;
+    color: #f9fafb;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    margin-bottom: 22px;
 }
 
-label {
-    font-size: 14px;
-    color: #ccc; 
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #e5e7eb;
+    opacity: 0.95;
 }
 
-input[type="text"],
-input[type="tel"] {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #444; 
-    background-color: #555;
-    color: #fff; 
+.form-group input {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.1);
+    color: #e5e7eb;
+    font-size: 1rem;
+    backdrop-filter: blur(6px);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-group input::placeholder {
+    color: rgba(229, 231, 235, 0.6);
+}
+
+.form-group input:focus {
     outline: none;
-    transition: border 0.3s ease;
+    border-color: #22c55e;
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.25);
 }
 
-input[type="text"]:focus,
-input[type="tel"]:focus {
-    border: 1px solid #007bff; 
+.form-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
 }
 
-.form-footer button {
-    padding: 12px;
-    background-color: #007bff; 
-    color: white;
+.btn-guardar {
+    padding: 12px 30px;
+    border-radius: 28px;
+    background: #22c55e;
+    color: #064e3b;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.25s, background 0.25s, box-shadow 0.25s;
 }
 
-.form-footer button:hover {
-    background-color: #0056b3; 
-    transform: translateY(-3px); 
+.btn-guardar:hover {
+    background: #16a34a;
+    color: #ecfdf5;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(22, 163, 74, 0.45);
 }
 
-.form-footer button:active {
-    transform: translateY(1px); 
-}
+@media (max-width: 480px) {
+    .nuevo-contacto-container {
+        padding: 30px 24px;
+    }
 
-.boton-regresar {
-    display: none; 
+    .nuevo-contacto-container h1 {
+        font-size: 1.6rem;
+    }
 }

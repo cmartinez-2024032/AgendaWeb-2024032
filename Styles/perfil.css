@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0b0f1a, #1a1f34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.perfil-container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(15, 180, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    animation: aparecer 0.6s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.perfil-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8), 0 0 25px rgba(15, 180, 255, 0.3);
+}
+
+.perfil-container h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #0fb4ff;
+    text-shadow: 0 0 10px rgba(15, 180, 255, 0.7);
+}
+
+.perfil-foto {
+    margin-bottom: 25px;
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #0fb4ff;
+    box-shadow: 0 0 15px rgba(15, 180, 255, 0.5), 0 5px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfil-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-foto:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(15, 180, 255, 0.8), 0 5px 30px rgba(0,0,0,0.6);
+}
+
+.perfil-info {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
+    transition: background 0.3s ease;
+}
+
+.perfil-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.perfil-info strong {
+    color: #0fb4ff;
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 12px;
+    width: 100%;
+    background: linear-gradient(135deg, #0fb4ff, #2184d0);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.btn-volver:hover {
+    background: linear-gradient(135deg, #ff4484, #d94170);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
