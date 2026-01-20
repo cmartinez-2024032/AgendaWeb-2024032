@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top, #0a0a0a, #050101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.detalle-container {
+    width: 380px;
+    padding: 30px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.detalle-container h1 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.detalle-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detalle-lista li {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.detalle-lista li:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateX(5px);
+}
+
+.detalle-lista i {
+    margin-right: 10px;
+    color: #0fb4ff;
+    font-size: 16px;
+}
+
+.detalle-lista strong {
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.btn {
+    flex: 1;
+    margin: 0 4px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/* COLORES */
+.favorito {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.editar {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+}
+
+.eliminar {
+    background: linear-gradient(135deg, #434343, #000000);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-volver {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #0fb4ff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.btn-volver:hover {
+    color: #ff4484;
+}
+
+
+@media (max-width: 420px) {
+    .detalle-container {
+        width: 90%;
+        padding: 22px;
+    }
+
+    .acciones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

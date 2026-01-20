@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Contacto - Agenda Web</title>
+    <link rel="stylesheet" href="../Styles/nuevoC.css">
+</head>
+<body>
+    <div class="nuevo-contacto-container">
+        <header>
+            <h1>Agregar Nuevo Contacto</h1>
+        </header>
+
+      
+        <form action="contactos.html" method="get">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Número de Teléfono" required>
+            </div>
+
+            
+            <div class="form-footer">
+                <button type="submit">Guardar Contacto</button>
+            </div>
+        </form>
+
+        <div class="form-footer">
+            <a href="contactos.html" class="boton-regresar">Regresar</a>
+        </div>
+    </div>
+</body>
+</html>
