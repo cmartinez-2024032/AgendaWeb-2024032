@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #050101;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.favoritos-container {
+    width: 360px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.favoritos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.favorito-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.favorito-card:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-3px);
+}
+
+.favorito-card h2 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+.favorito-card i {
+    color: #ff4b5c;
+    margin-right: 6px;
+}
+
+.btn-volver {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #0fb4ff;
+    font-size: 14px;
+}
+
+.btn-volver:hover {
+    color: #ff4484;
+}
