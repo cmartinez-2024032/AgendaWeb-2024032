@@ -5,7 +5,6 @@
     font-family: "Segoe UI", Tahoma, sans-serif;
 }
 
-/* ===== FONDO GENERAL (MISMA PALETA) ===== */
 body {
     min-height: 100vh;
     background:
@@ -24,7 +23,6 @@ body {
     padding: 20px;
 }
 
-/* ===== CONTENEDOR FAVORITOS ===== */
 .favoritos-container {
     width: 380px;
     background: rgba(255, 255, 255, 0.08);
@@ -34,7 +32,6 @@ body {
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
 }
 
-/* ===== TÍTULO ===== */
 .favoritos-container h1 {
     text-align: center;
     margin-bottom: 22px;
@@ -43,14 +40,12 @@ body {
     color: #f9fafb;
 }
 
-/* ===== LISTA ===== */
 .favoritos-lista {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* ===== CARD FAVORITO ===== */
 .favorito-card {
     background: rgba(255, 255, 255, 0.1);
     padding: 16px 18px;
@@ -64,7 +59,6 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
 }
 
-/* ===== TEXTO ===== */
 .favorito-card h2 {
     font-size: 1rem;
     margin-bottom: 6px;
@@ -72,13 +66,11 @@ body {
     color: #e5e7eb;
 }
 
-/* ===== ICONO ===== */
 .favorito-card i {
     color: #facc15;
     margin-right: 6px;
 }
 
-/* ===== BOTÓN VOLVER ===== */
 .btn-volver {
     display: block;
     margin-top: 28px;
@@ -97,7 +89,6 @@ body {
     color: #dbeafe;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 480px) {
     .favoritos-container {
         width: 100%;

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Pendientes</title>
+    <link rel="stylesheet" href="../Styles/todo.css">
+</head>
+<body>
+
+<div class="todo-container">
+    <h1>ToDo List</h1>
+    <div class="todo-form">
+        <input type="text" id="tarea" placeholder="Nueva tarea">
+        <select id="prioridad">
+            <option value="1">Alta</option>
+            <option value="2">Media</option>
+            <option value="3">Baja</option>
+        </select>
+        <button onclick="agregarTarea()">Agregar</button>
+        
+    </div>
+    <a href="contactos.html" class="btn-volver">← Volver a Contactos</a>
+    <ul id="lista-tareas"></ul>
+
+</div>
+
+<script src="../Scripts/todo.js"></script>
+</body>
+</html>

@@ -2,31 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del Contacto - Cristian Martinez</title>
+    <title>Detalle del Contacto</title>
     <link rel="stylesheet" href="../Styles/detalleC.css">
 </head>
+
 <body>
 
-<div class="detalle-container">
-    <h1>Detalle del Contacto</h1>
+<main class="detalle-container">
+
+    <h1 id="nombre"></h1>
 
     <ul class="detalle-lista">
-        <li><strong>Nombre:</strong> Cristian Martinez</li>
-        <li><strong>Teléfono:</strong> 5555-5555</li>
-        <li><strong>Correo:</strong> cristian@mail.com</li>
-        <li><strong>Dirección:</strong> Ciudad de Guatemala</li>
-        <li><strong>Categoría:</strong> Trabajo</li>
-    </ul>
+        <li><strong>📞 Teléfono:</strong> <span id="telefono"></span></li>
+        <li><strong>📧 Correo:</strong> <span id="correo"></span></li>
+        <li><strong>⚧ Sexo:</strong> <span id="sexo"></span></li>
+        </ul>
 
-    <div class="acciones">
-        <button class="btn favorito">Favorito</button>
-        <button class="btn editar">Editar</button>
-        <button class="btn eliminar">Eliminar</button>
+    <div class="detalle-acciones">
+        <a href="contactos.html" class="btn-volver">Volver</a>
     </div>
 
-    <a href="contactos.html" class="btn-volver">← Volver</a>
-</div>
+</main>
 
+<script src="../scripts/detalleContacto.js"></script>
 </body>
 </html>

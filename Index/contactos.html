@@ -4,61 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda Web - Contactos</title>
-    <link rel="stylesheet" href="../Styles/contactos.css"> 
+    <link rel="stylesheet" href="../Styles/contactos.css">
 </head>
 <body>
 
-<<<<<<< HEAD
-<div class="contactos-container">
-    <h1>Mis Contactos</h1>
-
-    <div class="contact-card-container">
-
-        <div class="contact-card">
-            <h2>Iverson Pérez</h2>
-            <p>Teléfono: 8888-8888</p>
-            <a href="detalleContacto.html?nombre=Iverson Pérez&telefono=8888-8888&correo=iverson@email.com&direccion=Ciudad de Guatemala&categoria=Amigo" class="btn-detalle">
-                Ver Detalles
-            </a>
-        </div>
-
-        <div class="contact-card">
-            <h2>Alan Lacan</h2>
-            <p>Teléfono: 7777-7777</p>
-            <a href="detalleContacto.html?nombre=Alan Lacan&telefono=7777-7777&correo=alan@email.com&direccion=Ciudad de Guatemala&categoria=Trabajo" class="btn-detalle">
-                Ver Detalles
-            </a>
-        </div>
-
-        <div class="contact-card">
-            <h2>Fiorentino Santos</h2>
-            <p>Teléfono: 6666-6666</p>
-            <a href="detalleContacto.html?nombre=Fiorentino Santos&telefono=6666-6666&correo=fiorentino@email.com&direccion=Ciudad de Guatemala&categoria=Familia" class="btn-detalle">
-                Ver Detalles
-            </a>
-        </div>
-
-        <div class="contact-card">
-            <h2>Cristian Martinez</h2>
-            <p>Teléfono: 5555-5555</p>
-            <a href="detalleContacto.html?nombre=Cristian Martinez&telefono=5555-5555&correo=cristian@email.com&direccion=Ciudad de Guatemala&categoria=Amigo" class="btn-detalle">
-                Ver Detalles
-            </a>
-        </div>
-
-        <div class="contact-card">
-            <h2>Adrian Rafael</h2>
-            <p>Teléfono: 4444-4444</p>
-            <a href="detalleContacto.html?nombre=Adrian Rafael&telefono=4444-4444&correo=adrian@email.com&direccion=Ciudad de Guatemala&categoria=Trabajo" class="btn-detalle">
-                Ver Detalles
-            </a>
-        </div>
-
-    </div>
-
-    <a href="nuevoContacto.html" class="btn-nuevo">Nuevo contacto</a>
-</div>
-=======
     <header class="top-bar">
         <h1>Mis Contactos</h1>
         <div class="top-actions">
@@ -67,44 +16,86 @@
         </div>
     </header>
 
-    <main class="contactos-container">
-        <section class="contact-card-container">
+<main class="contactos-container">
+    <section class="contact-card-container">
 
-            <div class="contact-card">
-                <h2>Iverson Pérez</h2>
-                <p>8888-8888</p>
-                <a href="detalleContacto.html" class="btn-detalles">Ver Detalles</a>
-            </div>
+        <div class="contact-card">
+            <h2>Iverson Pérez</h2>
+            <p>8888-8888</p>
+            <button class="btn-detalles" 
+                data-nombre="Iverson Pérez"
+                data-telefono="8888-8888"
+                data-correo="iperez-2024015"
+                data-sexo="Masculino">
+                Ver Detalles
+            </button>
+        </div>
 
-            <div class="contact-card">
-                <h2>Alan Lacan</h2>
-                <p>7777-7777</p>
-                <a href="detalleContacto.html" class="btn-detalles">Ver Detalles</a>
-            </div>
+        <div class="contact-card">
+            <h2>Alan Lacan</h2>
+            <p>7777-7777</p>
+            <button class="btn-detalles"
+                data-nombre="Alan Lacan"
+                data-telefono="7777-7777"
+                data-correo="alacan-2024010@kinal.edu.gt"
+                data-sexo="Masculino">
+                Ver Detalles
+            </button>
+        </div>
 
-            <div class="contact-card">
-                <h2>Fiorentino Santos</h2>
-                <p>6666-6666</p>
-                <a href="detalleContacto.html" class="btn-detalles">Ver Detalles</a>
-            </div>
+        <div class="contact-card">
+            <h2>Fiorentino Santos</h2>
+            <p>6666-6666</p>
+            <button class="btn-detalles"
+                data-nombre="Fiorentino Santos"
+                data-telefono="6666-6666"
+                data-correo="aroquel-2024011@kinal.edu.gt"
+                data-sexo="Masculino">
+                Ver Detalles
+            </button>
+        </div>
 
-            <div class="contact-card">
-                <h2>Cristian Martinez</h2>
-                <p>5555-5555</p>
-                <a href="detalleContacto.html" class="btn-detalles">Ver Detalles</a>
-            </div>
+        <div class="contact-card">
+    <h2>Cristian Martínez</h2>
+    <p>5555-5555</p>
+    <button class="btn-detalles"
+        data-nombre="Cristian Martínez"
+        data-telefono="5555-5555"
+        data-correo="csantos-2024012@kinal.edu.gt"
+        data-sexo="Masculino">
+        Ver Detalles
+    </button>
+</div>
 
-            <div class="contact-card">
-                <h2>Adrian Rafael</h2>
-                <p>4444-4444</p>
-                <a href="detalleContacto.html" class="btn-detalles">Ver Detalles</a>
-            </div>
+<div class="contact-card">
+    <h2>Adrián Rafael</h2>
+    <p>4444-4444</p>
+    <button class="btn-detalles"
+        data-nombre="Adrián Rafael"
+        data-telefono="4444-4444"
+        data-correo="aalvarez-2024013@kinal.edu.gt"
+        data-sexo="Masculino">
+        Ver Detalles
+    </button>
+</div>
 
-        </section>
+<div class="contact-card">
+    <h2>Cristopher Martinez</h2>
+    <p>3333-3333</p>
+    <button class="btn-detalles"
+        data-nombre="Cristopher Martinez"
+        data-telefono="3333-3333"
+        data-correo="cmartinez-2024032@kinal.edu.gt"
+        data-sexo="Masculino">
+        Ver Detalles
+    </button>
+</div>
+
+    </section>
 
         <a href="nuevoContacto.html" class="btn-nuevo">+ Nuevo Contacto</a>
     </main>
->>>>>>> feature/perfil
 
+<script src="../scripts/contactos.js"></script>
 </body>
 </html>
